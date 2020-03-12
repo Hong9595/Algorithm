@@ -9,7 +9,7 @@ int solution(int n) {
     
     int start = 1, end = 1;
     int acc = 0;
-    while(start <= n || end > n) {
+    while(start <= n) {
         if(acc > n) {
             acc -= start;
             start++;
