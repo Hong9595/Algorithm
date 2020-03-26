@@ -29,10 +29,10 @@ void dijkstra(int start) {
     // 시작점 가중치 0
     pq.push(make_pair(start, 0));
     
-    // 시작점에서 다른 버텍스들까지 가중치 맥스로 초기화
-    for(int i=1; i<=n; i++) {
-        if(i != start)  pq.push(make_pair(i, MAX));
-    }
+//    // 시작점에서 다른 버텍스들까지 가중치 맥스로 초기화
+//    for(int i=1; i<=n; i++) {
+//        if(i != start)  pq.push(make_pair(i, MAX));
+//    }
     
     while(!pq.empty()) {
         int curVertex = pq.top().first;
